@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سياسة الخصوصية — Maestro</title>
+<meta name="description" content="سياسة الخصوصية لتطبيق Maestro، جهاز التحكم عن بُعد الشامل لأجهزة التلفزيون والأجهزة المتصلة الأخرى، وفقًا لقانون LGPD واللائحة العامة لحماية البيانات GDPR.">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="alternate" hreflang="pt-BR" href="../pt/"><link rel="alternate" hreflang="en" href="../en/"><link rel="alternate" hreflang="es" href="../es/"><link rel="alternate" hreflang="fr" href="../fr/"><link rel="alternate" hreflang="de" href="../de/"><link rel="alternate" hreflang="it" href="../it/"><link rel="alternate" hreflang="ja" href="../ja/"><link rel="alternate" hreflang="ru" href="../ru/"><link rel="alternate" hreflang="zh-CN" href="../zh/"><link rel="alternate" hreflang="ar" href="../ar/">
+<style>
+:root {
+    --bg:#f7f7fa; --paper:#ffffff; --fg:#1a1a1f; --muted:#5d5d68; --line:#e4e4ec;
+    --accent:#3d5afe; --accent-soft:#eef1ff; --head:#0d0d12; --head-fg:#f4f4f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#0e0e12; --paper:#16161c; --fg:#ececf2; --muted:#a2a2ae; --line:#2a2a34;
+      --accent:#8c9eff; --accent-soft:#1d2140; --head:#050507; --head-fg:#f4f4f8;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color:var(--accent); }
+  header { background:var(--head); color:var(--head-fg); }
+  .head { max-width:880px; margin:0 auto; padding:40px 16px 36px; display:flex; gap:20px; align-items:center; }
+  .head img { width:72px; height:72px; border-radius:18px; flex:none; }
+  .head h1 { margin:0; font-size:1.85rem; line-height:1.2; letter-spacing:-.01em; }
+  .head p { margin:6px 0 0; color:#b9b9c6; font-size:.95rem; }
+  main { max-width:880px; margin:0 auto; padding:0 16px 64px; }
+  .paper { background:var(--paper); border:1px solid var(--line); border-radius:16px;
+           padding:32px clamp(18px, 4vw, 44px); margin-top:-12px; position:relative; }
+  .meta { display:flex; flex-wrap:wrap; gap:8px 24px; color:var(--muted); font-size:.9rem;
+          padding-bottom:20px; border-bottom:1px solid var(--line); }
+  .meta b { color:var(--fg); font-weight:600; }
+  .summary { background:var(--accent-soft); border-radius:12px; padding:20px 22px; margin:24px 0; }
+  .summary h2 { margin:0 0 10px; font-size:1.05rem; border:0; padding:0; }
+  .summary ul { margin:0; padding-left:20px; }
+  .summary li { margin:4px 0; }
+  nav.toc { border:1px solid var(--line); border-radius:12px; padding:16px 22px; margin:24px 0 8px; }
+  nav.toc strong { display:block; margin-bottom:6px; font-size:.95rem; }
+  nav.toc ol { margin:0; padding-left:22px; columns:2; column-gap:32px; font-size:.95rem; }
+  nav.toc li { break-inside:avoid; margin:2px 0; }
+  nav.toc a { text-decoration:none; }
+  nav.toc a:hover { text-decoration:underline; }
+  h2 { font-size:1.22rem; margin:40px 0 10px; padding-top:8px; scroll-margin-top:16px; }
+  h3 { font-size:1rem; margin:22px 0 6px; }
+  p, li { color:var(--fg); }
+  .wrap { overflow-x:auto; margin:14px 0; border:1px solid var(--line); border-radius:10px; }
+  table { width:100%; border-collapse:collapse; font-size:.93rem; }
+  th, td { text-align:left; vertical-align:top; padding:10px 12px; border-bottom:1px solid var(--line); }
+  tr:last-child td { border-bottom:0; }
+  th { background:var(--accent-soft); font-weight:600; white-space:nowrap; }
+  .contact { border-left:3px solid var(--accent); padding:4px 0 4px 16px; }
+  footer { max-width:880px; margin:0 auto; padding:0 16px 40px; color:var(--muted); font-size:.85rem; text-align:center; }
+  @media (max-width:600px) {
+    .head { flex-direction:column; align-items:flex-start; padding-top:28px; }
+    .head img { width:56px; height:56px; border-radius:14px; }
+    .head h1 { font-size:1.5rem; }
+    nav.toc ol { columns:1; }
+  }
+  @media print {
+    header { background:none; color:#000; } .head p { color:#444; }
+    .paper { border:0; margin:0; padding:0; } nav.toc { display:none; }
+  }
+
+.lang { margin-inline-start:auto; align-self:flex-start; }
+.lang select { background:#1d1d25; color:#f4f4f8; border:1px solid #3a3a46; border-radius:8px; padding:6px 10px; font:inherit; font-size:.9rem; }
+[dir="rtl"] th, [dir="rtl"] td { text-align:right; }
+[dir="rtl"] ul, [dir="rtl"] ol { padding-left:0; padding-right:22px; }
+.sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
+[dir="rtl"] .contact { border-left:0; border-right:3px solid var(--accent); padding:4px 16px 4px 0; }
+@media (max-width:600px) { .lang { margin-inline-start:0; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="head">
+    <img src="../icon.png" alt="أيقونة Maestro">
+    <div>
+      <h1>سياسة الخصوصية</h1>
+      <p>Maestro — جهاز تحكم عن بُعد شامل · JellasStudio</p>
+    </div>
+    <label class="lang"><span class="sr">اللغة</span>
+      <select aria-label="اللغة" onchange="try{localStorage.setItem('lang',this.value.split('/')[1])}catch(e){};location.href=this.value"><option value="../pt/" lang="pt-BR">Português</option><option value="../en/" lang="en">English</option><option value="../es/" lang="es">Español</option><option value="../fr/" lang="fr">Français</option><option value="../de/" lang="de">Deutsch</option><option value="../it/" lang="it">Italiano</option><option value="../ja/" lang="ja">日本語</option><option value="../ru/" lang="ru">Русский</option><option value="../zh/" lang="zh-CN">简体中文</option><option value="../ar/" selected lang="ar">العربية</option></select>
+    </label>
+  </div>
+</header>
+<main>
+<article class="paper">
+  <div class="meta">
+    <span>سارية اعتبارًا من: <b>21 نوفمبر 2026</b></span>
+    <span>آخر تحديث: <b>21 نوفمبر 2026</b></span>
+    <span>الإصدار: <b>1.0</b></span>
+  </div>
+  <section class="summary">
+    <h2>باختصار</h2>
+    <ul><li>لا يتطلب Maestro إنشاء حساب ولا يملك خوادم خاصة به: لا تُرسَل أي بيانات شخصية إلى JellasStudio.</li><li>يتم التحكم في أجهزتك (أجهزة التلفزيون وأجهزة البث وغيرها من المعدات المتوافقة) مباشرةً بينها وبين هاتفك، وذلك في الغالب داخل شبكتك المحلية.</li><li>تتولى خدمة التعرّف على الكلام في نظام Android معالجة صوت الأوامر الصوتية، وليس Maestro.</li><li>في الخطة المجانية، قد يعالج Google AdMob بيانات لعرض الإعلانات. لا يرى مشتركو Pro أي إعلانات.</li><li>تتم معالجة المدفوعات حصريًا عبر Google Play.</li></ul>
+  </section>
+  <nav class="toc">
+    <strong>المحتويات</strong>
+    <ol><li><a href="#s1">المسؤول عن البيانات ونطاق التطبيق</a></li><li><a href="#s2">التعريفات</a></li><li><a href="#s3">البيانات المُعالَجة وأغراضها</a></li><li><a href="#s4">الأوامر الصوتية</a></li><li><a href="#s5">الإعلانات</a></li><li><a href="#s6">المشتريات والاشتراكات</a></li><li><a href="#s7">الأسس القانونية</a></li><li><a href="#s8">المشاركة والنقل الدولي</a></li><li><a href="#s9">التخزين والاحتفاظ والأمان</a></li><li><a href="#s10">أذونات التطبيق</a></li><li><a href="#s11">حقوق صاحب البيانات</a></li><li><a href="#s12">الأطفال</a></li><li><a href="#s13">التغييرات على هذه السياسة</a></li><li><a href="#s14">القانون الواجب التطبيق والتواصل</a></li></ol>
+  </nav>
+<h2 id="s1">1. المسؤول عن البيانات ونطاق التطبيق</h2>
+<p>توضّح سياسة الخصوصية هذه كيفية تعامل تطبيق <strong>Maestro</strong> لنظام Android (المعرّف <code>com.jellas.maestroremote</code>) مع معلومات مستخدميه. يتولى تطوير التطبيق ونشره <strong>JellasStudio</strong> ("JellasStudio" أو "نحن")، الذي يعمل بصفته المسؤول عن معالجة البيانات وفقًا للقانون البرازيلي رقم 13.709/2018 (القانون العام لحماية البيانات الشخصية — LGPD)، ووفقًا للائحة الاتحاد الأوروبي 2016/679 (GDPR) حيثما ينطبق ذلك.</p>
+<p>باستخدامك Maestro، فإنك تُقرّ بأنك قرأت هذه السياسة وفهمتها. تنطبق هذه السياسة على التطبيق فقط، ولخدمات الأطراف الثالثة المذكورة هنا سياساتها الخاصة.</p>
+<h2 id="s2">2. التعريفات</h2>
+<ul>
+<li><strong>البيانات الشخصية:</strong> المعلومات المتعلقة بشخص طبيعي محدد أو يمكن تحديده.</li>
+<li><strong>صاحب البيانات:</strong> الشخص الذي تتعلق به البيانات الشخصية، أي أنت.</li>
+<li><strong>المعالجة:</strong> أي عملية تُجرى على البيانات، مثل الجمع والاستخدام والتخزين والمشاركة والحذف.</li>
+<li><strong>الجهاز المتوافق:</strong> أي جهاز يستطيع Maestro التحكم فيه، مثل أجهزة التلفزيون وأجهزة البث وأجهزة الاستقبال ومكبرات الصوت ومكيفات الهواء وغيرها من الأجهزة المتصلة.</li>
+<li><strong>الشبكة المحلية:</strong> شبكة Wi-Fi المتصل بها هاتفك وأجهزتك.</li>
+<li><strong>الخطة المجانية / Maestro Pro:</strong> طريقتا استخدام التطبيق بدون اشتراك أو شراء دائم ومعهما.</li>
+</ul>
+<h2 id="s3">3. البيانات المُعالَجة وأغراضها</h2>
+<p>صُمّم Maestro وفقًا لمبدأ تقليل البيانات (LGPD، المادة 6، البند III). تُحفَظ البيانات التالية <strong>في وحدة التخزين الداخلية لجهازك فقط</strong> ولا تُنقل إلى JellasStudio.</p>
+<div class='wrap'><table>
+<tr><th>البيانات</th><th>الغرض</th><th>مكان الحفظ</th></tr>
+<tr><td>اسم الأجهزة المكتشفة وعلامتها التجارية وطرازها وعنوان IP المحلي وعنوان MAC</td><td>التعرّف على أجهزتك والاتصال بها وتشغيلها عن بُعد (Wake-on-LAN)</td><td>على هاتفك؛ تُرسَل فقط إلى الأجهزة نفسها داخل الشبكة المحلية</td></tr>
+<tr><td>حالة الأجهزة (التشغيل أو الإيقاف، مستوى الصوت، مصدر الإدخال، درجة الحرارة، وضع التشغيل)</td><td>عرض عمل الأجهزة وضبطه</td><td>تُستمد من الأجهزة نفسها؛ ولا تُحفَظ بشكل دائم</td></tr>
+<tr><td>الربط بين الأجهزة (مثل منفذ HDMI)</td><td>التبديل تلقائيًا بين الأجهزة المتصلة ببعضها</td><td>على هاتفك</td></tr>
+<tr><td>رموز التفويض ومفاتيح الإقران المشفّرة</td><td>تجنّب طلب الجهاز للإذن في كل مرة</td><td>المساحة الخاصة بالتطبيق</td></tr>
+<tr><td>قائمة التطبيقات المثبتة على الأجهزة وأيقوناتها، عند توفرها</td><td>عرض هذه التطبيقات وفتحها من الهاتف</td><td>على هاتفك (ذاكرة مؤقتة)</td></tr>
+<tr><td>لقطات شاشة الجهاز</td><td>الحفظ أو المشاركة، عند طلبك فقط</td><td>معرض الصور (Pictures/Maestro) أو التطبيق الذي تختاره</td></tr>
+<tr><td>التفضيلات (المظهر، اللغة، الاهتزاز، الأصوات) وحالة الاشتراك</td><td>الاحتفاظ بإعداداتك وتفعيل ميزات Pro دون اتصال</td><td>على هاتفك</td></tr>
+</table></div>
+<p>يعتمد اكتشاف الأجهزة على بروتوكولات قياسية للشبكات المحلية، مثل mDNS وSSDP، ويقتصر على الشبكة المتصل بها هاتفك. أيقونات التطبيقات المعروضة مملوكة لأصحابها وتُستخدم للتعريف فقط.</p>
+<h3>الأجهزة التي يُتحكَّم فيها عبر السحابة الخاصة بالشركة المصنّعة</h3>
+<p>لا تقبل بعض الأجهزة الأوامر إلا عبر الخدمة السحابية للشركة المصنّعة نفسها. إذا اخترت ربط حسابك في تلك الخدمة بـ Maestro، فإن التفويض يتم عبر الصفحة الرسمية للشركة المصنّعة، ولا يطّلع Maestro أبدًا على كلمة مرورك. لا يحفظ التطبيق على هاتفك سوى رمز الوصول الممنوح، ويرسل الأوامر مباشرةً إلى خوادم الشركة المصنّعة، وتخضع معالجتها للبيانات لسياسة الخصوصية الخاصة بها. يمكنك إلغاء ربط الحساب في أي وقت من التطبيق أو من موقع الشركة المصنّعة.</p>
+<h2 id="s4">4. الأوامر الصوتية</h2>
+<p>لا يقوم Maestro <strong>بتسجيل الصوت أو تخزينه أو نقله</strong>. عند الضغط على زر الميكروفون، يستدعي التطبيق خدمة التعرّف على الكلام في نظام Android، والتي تقدمها Google عادةً. تلتقط هذه الخدمة الصوت ولا تعيد إلى Maestro سوى النص المتعرَّف عليه (مثل "افتح YouTube")، والذي يُستخدم فورًا لتنفيذ الأمر ثم يُحذف.</p>
+<p>تخضع معالجة الصوت من قِبل مزوّد خدمة الكلام لـ <a href='https://policies.google.com/privacy'>سياسة خصوصية Google</a>. لا يُفعَّل الميكروفون أبدًا دون إجراء منك.</p>
+<h2 id="s5">5. الإعلانات</h2>
+<p>تعرض الخطة المجانية إعلانات مقدَّمة من <strong>Google AdMob</strong>: لافتة إعلانية في قائمة الأجهزة وفي الإعدادات، وأحيانًا إعلانًا عند العودة إلى التطبيق بعد غياب لبضع ساعات. لا تعرض شاشة جهاز التحكم أي إعلانات أبدًا. ولا تُشغَّل خدمة الإعلانات لمشتركي Maestro Pro.</p>
+<p>لعرض الإعلانات وتحديد عدد مرات ظهورها وقياس أدائها، قد يجمع AdMob معرّف الإعلانات في Android وعنوان IP ومعلومات تقنية عن الجهاز والنظام والتفاعلات مع الإعلانات. تعالج Google هذه البيانات بصفتها مسؤولًا مستقلًا، كما هو موضح في <a href='https://policies.google.com/technologies/partner-sites'>كيفية استخدام Google للمعلومات من المواقع أو التطبيقات التي تستخدم خدماتها</a>.</p>
+<p>في الولايات القضائية التي يشترط فيها القانون الحصول على موافقة مسبقة (مثل المنطقة الاقتصادية الأوروبية والمملكة المتحدة وسويسرا)، يطلب التطبيق إذنك قبل تحميل الإعلانات عبر منصة الموافقة الرسمية من Google، ويتيح لك مراجعة اختيارك في أي وقت من <em>الإعدادات &gt; حول &gt; خيارات خصوصية الإعلانات</em>. وفي أي بلد، يمكنك إعادة تعيين معرّف الإعلانات أو حذفه من إعدادات Android (<em>Google &gt; الإعلانات</em>).</p>
+<h2 id="s6">6. المشتريات والاشتراكات</h2>
+<p>تتم معالجة اشتراكات Maestro Pro والشراء الدائم حصريًا عبر <strong>Google Play</strong>. لا يتلقى JellasStudio ولا يخزّن اسمك أو بريدك الإلكتروني أو عنوانك أو بيانات بطاقتك أو أي معلومات دفع أخرى.</p>
+<p>لا يتلقى التطبيق من Google Play سوى تأكيد وجود عملية شراء نشطة مع رمز المعاملة، وذلك لتفعيل ميزات Pro. تتم عمليات الإلغاء واسترداد الأموال وإدارة الاشتراك من متجر Play، ضمن <em>الدفعات والاشتراكات</em>، وفقًا لـ <a href='https://play.google.com/about/play-terms/'>بنود خدمة Google Play</a>.</p>
+<h2 id="s7">7. الأسس القانونية</h2>
+<div class='wrap'><table>
+<tr><th>المعالجة</th><th>الأساس القانوني (LGPD، المادة 7)</th></tr>
+<tr><td>تشغيل جهاز التحكم والإقران والتفضيلات</td><td>تنفيذ عقد أو إجراءات مرتبطة به بناءً على طلب صاحب البيانات (البند V)</td></tr>
+<tr><td>الأوامر الصوتية ولقطات الشاشة</td><td>تنفيذ عقد بناءً على إجراء صريح من صاحب البيانات (البند V)</td></tr>
+<tr><td>معالجة المشتريات والتحقق من الاشتراك</td><td>تنفيذ عقد (البند V)</td></tr>
+<tr><td>الإعلانات المخصّصة حيث يشترط القانون الموافقة</td><td>الموافقة (البند I)، ويمكن سحبها في أي وقت</td></tr>
+<tr><td>الإعلانات والقياس في الحالات الأخرى</td><td>المصلحة المشروعة (البند IX)، التي تتيح تقديم التطبيق مجانًا</td></tr>
+</table></div>
+<p>بالنسبة إلى المستخدمين الخاضعين للائحة GDPR، تنطبق الأسس المقابلة في المادة 6(1)، الفقرات (أ) و(ب) و(و).</p>
+<h2 id="s8">8. المشاركة والنقل الدولي</h2>
+<p>لا يقوم JellasStudio <strong>ببيع البيانات الشخصية أو تأجيرها أو مشاركتها</strong>. الأطراف الثالثة الوحيدة التي قد تتلقى بيانات هي خدمات Google الموضحة في الأقسام من 4 إلى 6، وأجهزتك الخاصة داخل الشبكة المحلية، والخدمة السحابية للشركة المصنّعة المعنية فقط إذا ربطت حسابك (القسم 3).</p>
+<p>قد تعالج Google البيانات على خوادم موجودة خارج البرازيل. تُجري Google هذه العمليات بنفسها استنادًا إلى الضمانات المنصوص عليها في المادة 33 من قانون LGPD، مثل البنود التعاقدية القياسية.</p>
+<h2 id="s9">9. التخزين والاحتفاظ والأمان</h2>
+<p>تبقى البيانات الموضحة في القسم 3 على جهازك طالما كان التطبيق مثبتًا. يمكنك حذفها في أي وقت بإزالة جهاز من القائمة، أو مسح بيانات التطبيق من إعدادات Android، أو إلغاء تثبيت Maestro. تخضع البيانات التي تعالجها Google لفترات الاحتفاظ المحددة في سياستها.</p>
+<p>تُحفَظ مفاتيح الإقران في المساحة الخاصة بالتطبيق، ولا يمكن للتطبيقات الأخرى الوصول إليها. يُشفَّر الاتصال بالأجهزة (TLS) كلما دعمت الشركة المصنّعة ذلك، كما في أجهزة تلفزيون Samsung وLG وAndroid TV، ويكون الاتصال بالخدمات السحابية مشفّرًا دائمًا. لا يوجد نظام محصّن تمامًا من الأعطال؛ وفي حال وقوع حادث أمني جسيم، سيتم إخطار أصحاب البيانات والهيئة الوطنية البرازيلية لحماية البيانات (ANPD) وفقًا للمادة 48 من قانون LGPD.</p>
+<h2 id="s10">10. أذونات التطبيق</h2>
+<div class='wrap'><table>
+<tr><th>الإذن</th><th>الغرض</th></tr>
+<tr><td>الإنترنت؛ حالة الشبكة وWi-Fi</td><td>التواصل مع الأجهزة على الشبكة المحلية ومع خدمات الإعلانات والمشتريات</td></tr>
+<tr><td>البث المتعدد عبر Wi-Fi</td><td>العثور على الأجهزة في الشبكة تلقائيًا</td></tr>
+<tr><td>الأشعة تحت الحمراء</td><td>التحكم في الأجهزة بالأشعة تحت الحمراء، في الهواتف المزوّدة بمرسل IR</td></tr>
+<tr><td>الاهتزاز</td><td>استجابة لمسية عند الضغط على الأزرار</td></tr>
+<tr><td>التخزين (Android 9 أو أقدم فقط)</td><td>حفظ لقطات الشاشة في معرض الصور</td></tr>
+<tr><td>معرّف الإعلانات</td><td>إعلانات الخطة المجانية</td></tr>
+<tr><td>الفوترة عبر Google Play</td><td>اشتراكات Maestro Pro وشراؤه</td></tr>
+</table></div>
+<p>لا يطلب Maestro الوصول إلى موقعك أو جهات الاتصال أو الكاميرا أو ملفاتك الشخصية، ولا إلى الميكروفون بشكل مباشر.</p>
+<p>قد تتطلب الميزات الجديدة أذونات إضافية، مثل الوصول إلى الصور ومقاطع الفيديو والموسيقى لإرسالها إلى جهاز، أو البلوتوث للتحكم في المعدات القريبة. لن تُطلَب هذه الأذونات إلا عند استخدامك للميزة المعنية، ويمكن رفضها دون التأثير على بقية الوظائف، وسيتم وصفها في هذه السياسة قبل بدء استخدامها.</p>
+<h2 id="s11">11. حقوق صاحب البيانات</h2>
+<p>بموجب المادة 18 من قانون LGPD، يحق لك في أي وقت ومجانًا أن تطلب:</p>
+<ul>
+<li>تأكيد وجود المعالجة والوصول إلى البيانات؛</li>
+<li>تصحيح البيانات غير المكتملة أو غير الدقيقة أو القديمة؛</li>
+<li>إخفاء هوية البيانات غير الضرورية أو المعالَجة بشكل مخالف أو حجبها أو حذفها؛</li>
+<li>قابلية نقل البيانات؛</li>
+<li>معلومات عن الجهات التي تُشارَك معها البيانات؛</li>
+<li>معلومات عن إمكانية عدم منح الموافقة وعواقب ذلك؛</li>
+<li>سحب الموافقة وحذف البيانات المعالَجة بناءً عليها.</li>
+</ul>
+<p>نظرًا لأن بيانات Maestro تبقى على جهازك، يمكن ممارسة معظم هذه الحقوق مباشرةً من التطبيق أو من إعدادات Android. وبالنسبة إلى البيانات التي تعالجها Google، استخدم الأدوات المتاحة في <a href='https://myaccount.google.com/'>حسابك على Google</a>. ويتمتع المستخدمون الخاضعون للائحة GDPR أيضًا بحق الاعتراض على المعالجة وتقييدها. كما يمكنك تقديم شكوى إلى <a href='https://www.gov.br/anpd/'>ANPD</a> أو إلى هيئة حماية البيانات في بلدك.</p>
+<p>يمكن إرسال الطلبات إلى البريد الإلكتروني المذكور في القسم 14، وسيتم الرد عليها خلال 15 يومًا.</p>
+<h2 id="s12">12. الأطفال</h2>
+<p>لا يستهدف Maestro الأطفال دون سن 13 عامًا، ولا يجمع عن قصد بيانات شخصية من الأطفال. إذا علمت أن بيانات طفل قد عولجت دون موافقة وليّ أمره، فيُرجى التواصل معنا لحذفها.</p>
+<h2 id="s13">13. التغييرات على هذه السياسة</h2>
+<p>قد يتم تحديث هذه السياسة لتعكس التغييرات في التطبيق أو في التشريعات. ستكون النسخة السارية متاحة دائمًا على هذا العنوان، مع تاريخ آخر تحديث في أعلى الصفحة. وسيتم الإعلان عن التغييرات الجوهرية داخل التطبيق نفسه.</p>
+<h2 id="s14">14. القانون الواجب التطبيق والتواصل</h2>
+<p>تخضع هذه السياسة لقوانين جمهورية البرازيل الاتحادية، دون الإخلال بالحقوق الممنوحة لأصحاب البيانات بموجب قوانين بلد إقامتهم.</p>
+<p class='contact'><strong>JellasStudio</strong> — قناة التواصل مع أصحاب البيانات<br>
+البريد الإلكتروني: <a href='mailto:jellas20.dev@gmail.com' dir='ltr'>jellas20.dev@gmail.com</a></p>
+</article>
+</main>
+<footer>© 2026 JellasStudio · Maestro. جميع الحقوق محفوظة.</footer>
+</body>
+</html>

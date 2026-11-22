@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidad — Maestro</title>
+<meta name="description" content="Política de Privacidad de la aplicación Maestro, mando a distancia universal para televisores y otros dispositivos conectados, conforme a la LGPD y al RGPD.">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="alternate" hreflang="pt-BR" href="../pt/"><link rel="alternate" hreflang="en" href="../en/"><link rel="alternate" hreflang="es" href="../es/"><link rel="alternate" hreflang="fr" href="../fr/"><link rel="alternate" hreflang="de" href="../de/"><link rel="alternate" hreflang="it" href="../it/"><link rel="alternate" hreflang="ja" href="../ja/"><link rel="alternate" hreflang="ru" href="../ru/"><link rel="alternate" hreflang="zh-CN" href="../zh/"><link rel="alternate" hreflang="ar" href="../ar/">
+<style>
+:root {
+    --bg:#f7f7fa; --paper:#ffffff; --fg:#1a1a1f; --muted:#5d5d68; --line:#e4e4ec;
+    --accent:#3d5afe; --accent-soft:#eef1ff; --head:#0d0d12; --head-fg:#f4f4f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#0e0e12; --paper:#16161c; --fg:#ececf2; --muted:#a2a2ae; --line:#2a2a34;
+      --accent:#8c9eff; --accent-soft:#1d2140; --head:#050507; --head-fg:#f4f4f8;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color:var(--accent); }
+  header { background:var(--head); color:var(--head-fg); }
+  .head { max-width:880px; margin:0 auto; padding:40px 16px 36px; display:flex; gap:20px; align-items:center; }
+  .head img { width:72px; height:72px; border-radius:18px; flex:none; }
+  .head h1 { margin:0; font-size:1.85rem; line-height:1.2; letter-spacing:-.01em; }
+  .head p { margin:6px 0 0; color:#b9b9c6; font-size:.95rem; }
+  main { max-width:880px; margin:0 auto; padding:0 16px 64px; }
+  .paper { background:var(--paper); border:1px solid var(--line); border-radius:16px;
+           padding:32px clamp(18px, 4vw, 44px); margin-top:-12px; position:relative; }
+  .meta { display:flex; flex-wrap:wrap; gap:8px 24px; color:var(--muted); font-size:.9rem;
+          padding-bottom:20px; border-bottom:1px solid var(--line); }
+  .meta b { color:var(--fg); font-weight:600; }
+  .summary { background:var(--accent-soft); border-radius:12px; padding:20px 22px; margin:24px 0; }
+  .summary h2 { margin:0 0 10px; font-size:1.05rem; border:0; padding:0; }
+  .summary ul { margin:0; padding-left:20px; }
+  .summary li { margin:4px 0; }
+  nav.toc { border:1px solid var(--line); border-radius:12px; padding:16px 22px; margin:24px 0 8px; }
+  nav.toc strong { display:block; margin-bottom:6px; font-size:.95rem; }
+  nav.toc ol { margin:0; padding-left:22px; columns:2; column-gap:32px; font-size:.95rem; }
+  nav.toc li { break-inside:avoid; margin:2px 0; }
+  nav.toc a { text-decoration:none; }
+  nav.toc a:hover { text-decoration:underline; }
+  h2 { font-size:1.22rem; margin:40px 0 10px; padding-top:8px; scroll-margin-top:16px; }
+  h3 { font-size:1rem; margin:22px 0 6px; }
+  p, li { color:var(--fg); }
+  .wrap { overflow-x:auto; margin:14px 0; border:1px solid var(--line); border-radius:10px; }
+  table { width:100%; border-collapse:collapse; font-size:.93rem; }
+  th, td { text-align:left; vertical-align:top; padding:10px 12px; border-bottom:1px solid var(--line); }
+  tr:last-child td { border-bottom:0; }
+  th { background:var(--accent-soft); font-weight:600; white-space:nowrap; }
+  .contact { border-left:3px solid var(--accent); padding:4px 0 4px 16px; }
+  footer { max-width:880px; margin:0 auto; padding:0 16px 40px; color:var(--muted); font-size:.85rem; text-align:center; }
+  @media (max-width:600px) {
+    .head { flex-direction:column; align-items:flex-start; padding-top:28px; }
+    .head img { width:56px; height:56px; border-radius:14px; }
+    .head h1 { font-size:1.5rem; }
+    nav.toc ol { columns:1; }
+  }
+  @media print {
+    header { background:none; color:#000; } .head p { color:#444; }
+    .paper { border:0; margin:0; padding:0; } nav.toc { display:none; }
+  }
+
+.lang { margin-inline-start:auto; align-self:flex-start; }
+.lang select { background:#1d1d25; color:#f4f4f8; border:1px solid #3a3a46; border-radius:8px; padding:6px 10px; font:inherit; font-size:.9rem; }
+[dir="rtl"] th, [dir="rtl"] td { text-align:right; }
+[dir="rtl"] ul, [dir="rtl"] ol { padding-left:0; padding-right:22px; }
+.sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
+[dir="rtl"] .contact { border-left:0; border-right:3px solid var(--accent); padding:4px 16px 4px 0; }
+@media (max-width:600px) { .lang { margin-inline-start:0; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="head">
+    <img src="../icon.png" alt="Icono de Maestro">
+    <div>
+      <h1>Política de Privacidad</h1>
+      <p>Maestro — Mando a distancia universal · JellasStudio</p>
+    </div>
+    <label class="lang"><span class="sr">Idioma</span>
+      <select aria-label="Idioma" onchange="try{localStorage.setItem('lang',this.value.split('/')[1])}catch(e){};location.href=this.value"><option value="../pt/" lang="pt-BR">Português</option><option value="../en/" lang="en">English</option><option value="../es/" selected lang="es">Español</option><option value="../fr/" lang="fr">Français</option><option value="../de/" lang="de">Deutsch</option><option value="../it/" lang="it">Italiano</option><option value="../ja/" lang="ja">日本語</option><option value="../ru/" lang="ru">Русский</option><option value="../zh/" lang="zh-CN">简体中文</option><option value="../ar/" lang="ar">العربية</option></select>
+    </label>
+  </div>
+</header>
+<main>
+<article class="paper">
+  <div class="meta">
+    <span>Vigente desde: <b>21 de noviembre de 2026</b></span>
+    <span>Última actualización: <b>21 de noviembre de 2026</b></span>
+    <span>Versión: <b>1.0</b></span>
+  </div>
+  <section class="summary">
+    <h2>En resumen</h2>
+    <ul><li>Maestro no requiere registro y no tiene servidores propios: no se envía ningún dato personal a JellasStudio.</li><li>Tus dispositivos (televisores, reproductores de streaming y otros equipos compatibles) se controlan directamente entre ellos y tu móvil, por regla general dentro de tu red local.</li><li>El audio de los comandos de voz lo procesa el servicio de reconocimiento de voz de Android, no Maestro.</li><li>En el plan gratuito, Google AdMob puede tratar datos para mostrar anuncios. Los suscriptores Pro no ven anuncios.</li><li>Los pagos los procesa exclusivamente Google Play.</li></ul>
+  </section>
+  <nav class="toc">
+    <strong>Índice</strong>
+    <ol><li><a href="#s1">Responsable y alcance</a></li><li><a href="#s2">Definiciones</a></li><li><a href="#s3">Datos tratados y finalidades</a></li><li><a href="#s4">Comandos de voz</a></li><li><a href="#s5">Publicidad</a></li><li><a href="#s6">Compras y suscripciones</a></li><li><a href="#s7">Bases jurídicas</a></li><li><a href="#s8">Comunicación de datos y transferencias internacionales</a></li><li><a href="#s9">Almacenamiento, conservación y seguridad</a></li><li><a href="#s10">Permisos de la aplicación</a></li><li><a href="#s11">Derechos del titular</a></li><li><a href="#s12">Menores</a></li><li><a href="#s13">Cambios en esta política</a></li><li><a href="#s14">Legislación aplicable y contacto</a></li></ol>
+  </nav>
+<h2 id="s1">1. Responsable y alcance</h2>
+<p>Esta Política de Privacidad describe cómo la aplicación <strong>Maestro</strong> para Android (identificador <code>com.jellas.maestroremote</code>) trata la información de sus usuarios. La aplicación es desarrollada y publicada por <strong>JellasStudio</strong> ("JellasStudio", "nosotros"), que actúa como responsable del tratamiento conforme a la Ley brasileña n.º 13.709/2018 (Ley General de Protección de Datos — LGPD) y, cuando corresponda, al Reglamento (UE) 2016/679 (RGPD).</p>
+<p>Al usar Maestro, declaras haber leído y comprendido esta política. Se aplica exclusivamente a la aplicación; los servicios de terceros mencionados aquí tienen sus propias políticas.</p>
+<h2 id="s2">2. Definiciones</h2>
+<ul>
+<li><strong>Dato personal:</strong> información relativa a una persona física identificada o identificable.</li>
+<li><strong>Titular:</strong> la persona a la que se refieren los datos personales, es decir, tú.</li>
+<li><strong>Tratamiento:</strong> toda operación realizada con datos, como recogida, uso, almacenamiento, comunicación y eliminación.</li>
+<li><strong>Dispositivo compatible:</strong> cualquier equipo que Maestro pueda controlar, como televisores, reproductores de streaming, receptores, altavoces, aires acondicionados y otros dispositivos conectados.</li>
+<li><strong>Red local:</strong> la red Wi-Fi a la que están conectados tu móvil y tus dispositivos.</li>
+<li><strong>Plan gratuito / Maestro Pro:</strong> modalidades de uso de la aplicación sin y con suscripción o compra vitalicia.</li>
+</ul>
+<h2 id="s3">3. Datos tratados y finalidades</h2>
+<p>Maestro se diseñó según el principio de minimización de datos (LGPD, art. 6, III). Los datos siguientes se guardan <strong>solo en el almacenamiento interno de tu dispositivo</strong> y no se transmiten a JellasStudio.</p>
+<div class='wrap'><table>
+<tr><th>Dato</th><th>Finalidad</th><th>Dónde se guarda</th></tr>
+<tr><td>Nombre, marca, modelo, dirección IP local y dirección MAC de los dispositivos encontrados</td><td>Identificar, conectar y encender a distancia (Wake-on-LAN) tus dispositivos</td><td>En tu móvil; se envía solo a los propios dispositivos, en la red local</td></tr>
+<tr><td>Estado de los dispositivos (encendido o apagado, volumen, entrada, temperatura, modo de funcionamiento)</td><td>Mostrar y ajustar el funcionamiento de los dispositivos</td><td>Se obtiene de los propios dispositivos; no se guarda de forma permanente</td></tr>
+<tr><td>Vínculo entre dispositivos (p. ej., entrada HDMI)</td><td>Cambiar automáticamente entre dispositivos conectados entre sí</td><td>En tu móvil</td></tr>
+<tr><td>Códigos de autorización y claves criptográficas de emparejamiento</td><td>Evitar que el dispositivo pida autorización en cada uso</td><td>Área privada de la aplicación</td></tr>
+<tr><td>Lista e iconos de las aplicaciones instaladas en los dispositivos, cuando estén disponibles</td><td>Mostrar y abrir esas aplicaciones desde el móvil</td><td>En tu móvil (caché)</td></tr>
+<tr><td>Capturas de pantalla del dispositivo</td><td>Guardar o compartir, solo cuando lo solicitas</td><td>Galería (Pictures/Maestro) o la aplicación que elijas</td></tr>
+<tr><td>Preferencias (tema, idioma, vibración, sonidos) y estado de la suscripción</td><td>Mantener tus ajustes y desbloquear las funciones Pro sin conexión</td><td>En tu móvil</td></tr>
+</table></div>
+<p>La detección de dispositivos utiliza protocolos estándar de red local, como mDNS y SSDP, y se limita a la red a la que está conectado tu móvil. Los iconos de aplicaciones mostrados pertenecen a sus respectivos titulares y se usan solo para identificarlas.</p>
+<h3>Dispositivos controlados a través de la nube del fabricante</h3>
+<p>Algunos dispositivos solo aceptan órdenes a través del servicio en la nube del propio fabricante. Si decides conectar tu cuenta de ese servicio a Maestro, la autorización se realiza en la página oficial del fabricante y Maestro nunca tiene acceso a tu contraseña. La aplicación guarda en tu móvil solo el código de acceso concedido y envía las órdenes directamente a los servidores del fabricante, cuyo tratamiento de datos se rige por la política de privacidad de este. Puedes desconectar la cuenta en cualquier momento en la aplicación o en el sitio web del fabricante.</p>
+<h2 id="s4">4. Comandos de voz</h2>
+<p>Maestro <strong>no graba, no almacena ni transmite audio</strong>. Al tocar el botón del micrófono, la aplicación activa el servicio de reconocimiento de voz del sistema Android, normalmente proporcionado por Google. Ese servicio capta el audio y devuelve a Maestro solo el texto reconocido (por ejemplo, "abrir YouTube"), que se usa de inmediato para ejecutar el comando y después se descarta.</p>
+<p>El tratamiento del audio por parte del proveedor del servicio de voz se rige por la <a href='https://policies.google.com/privacy'>Política de Privacidad de Google</a>. El micrófono nunca se activa sin una acción tuya.</p>
+<h2 id="s5">5. Publicidad</h2>
+<p>El plan gratuito muestra anuncios de <strong>Google AdMob</strong>: un banner en la lista de dispositivos y en los ajustes y, ocasionalmente, un anuncio al volver a la aplicación tras algunas horas de ausencia. La pantalla del mando nunca muestra anuncios. Para los suscriptores de Maestro Pro, el servicio de anuncios no se inicia.</p>
+<p>Para mostrar anuncios, limitar su frecuencia y medirlos, AdMob puede recoger el identificador de publicidad de Android, la dirección IP, información técnica del dispositivo y del sistema e interacciones con los anuncios. Google trata estos datos como responsable independiente, según se describe en <a href='https://policies.google.com/technologies/partner-sites'>Cómo utiliza Google la información de sitios web o aplicaciones que utilizan sus servicios</a>.</p>
+<p>En las jurisdicciones en las que la ley exige consentimiento previo (como el Espacio Económico Europeo, el Reino Unido y Suiza), la aplicación solicita tu autorización antes de cargar anuncios, mediante la plataforma oficial de consentimiento de Google, y te permite revisarla en cualquier momento en <em>Ajustes &gt; Acerca de &gt; Opciones de privacidad de anuncios</em>. En cualquier país, puedes restablecer o eliminar tu identificador de publicidad en los ajustes de Android (<em>Google &gt; Anuncios</em>).</p>
+<h2 id="s6">6. Compras y suscripciones</h2>
+<p>Las suscripciones y la compra vitalicia de Maestro Pro las procesa exclusivamente <strong>Google Play</strong>. JellasStudio no recibe ni almacena tu nombre, correo electrónico, dirección, datos de tarjeta ni ninguna otra información de pago.</p>
+<p>La aplicación recibe de Google Play solo la confirmación de que existe una compra activa, junto con un código de transacción, para desbloquear las funciones Pro. Las cancelaciones, los reembolsos y la gestión de la suscripción se realizan en Play Store, en <em>Pagos y suscripciones</em>, conforme a las <a href='https://play.google.com/about/play-terms/'>Condiciones de Servicio de Google Play</a>.</p>
+<h2 id="s7">7. Bases jurídicas</h2>
+<div class='wrap'><table>
+<tr><th>Tratamiento</th><th>Base jurídica (LGPD, art. 7)</th></tr>
+<tr><td>Funcionamiento del mando, emparejamiento y preferencias</td><td>Ejecución de un contrato o de medidas precontractuales, a petición del titular (inciso V)</td></tr>
+<tr><td>Comandos de voz y capturas de pantalla</td><td>Ejecución de un contrato, mediante acción expresa del titular (inciso V)</td></tr>
+<tr><td>Procesamiento de compras y verificación de la suscripción</td><td>Ejecución de un contrato (inciso V)</td></tr>
+<tr><td>Anuncios personalizados donde la ley exige consentimiento</td><td>Consentimiento (inciso I), revocable en cualquier momento</td></tr>
+<tr><td>Anuncios y medición en los demás casos</td><td>Interés legítimo (inciso IX), que permite ofrecer la aplicación gratis</td></tr>
+</table></div>
+<p>Para los usuarios sujetos al RGPD, se aplican las bases equivalentes del art. 6, apartado 1, letras a), b) y f).</p>
+<h2 id="s8">8. Comunicación de datos y transferencias internacionales</h2>
+<p>JellasStudio <strong>no vende, alquila ni comparte</strong> datos personales. Los únicos terceros que pueden recibir datos son los servicios de Google descritos en las secciones 4 a 6, tus propios dispositivos dentro de la red local y, solo si conectas tu cuenta, el servicio en la nube del fabricante correspondiente (sección 3).</p>
+<p>Google puede tratar datos en servidores situados fuera de Brasil. Estas transferencias las realiza el propio Google, con base en las garantías previstas en el art. 33 de la LGPD, como las cláusulas contractuales tipo.</p>
+<h2 id="s9">9. Almacenamiento, conservación y seguridad</h2>
+<p>Los datos descritos en la sección 3 permanecen en tu dispositivo mientras la aplicación esté instalada. Puedes eliminarlos en cualquier momento quitando un dispositivo de la lista, borrando los datos de la aplicación en los ajustes de Android o desinstalando Maestro. Los datos tratados por Google siguen los plazos de conservación definidos en su política.</p>
+<p>Las claves de emparejamiento se guardan en el área privada de la aplicación, inaccesible para otras aplicaciones. La comunicación con los dispositivos usa cifrado (TLS) siempre que el fabricante lo ofrece, como en los televisores Samsung, LG y Android TV, y la comunicación con servicios en la nube siempre está cifrada. Ningún sistema es totalmente inmune a fallos; si se produce un incidente de seguridad relevante, se notificará a los titulares y a la Autoridad Nacional de Protección de Datos de Brasil (ANPD) conforme al art. 48 de la LGPD.</p>
+<h2 id="s10">10. Permisos de la aplicación</h2>
+<div class='wrap'><table>
+<tr><th>Permiso</th><th>Finalidad</th></tr>
+<tr><td>Internet; estado de la red y del Wi-Fi</td><td>Comunicarse con los dispositivos de la red local y con los servicios de anuncios y compras</td></tr>
+<tr><td>Multidifusión Wi-Fi</td><td>Encontrar dispositivos automáticamente en la red</td></tr>
+<tr><td>Infrarrojos</td><td>Controlar dispositivos por infrarrojos, en móviles con emisor IR</td></tr>
+<tr><td>Vibración</td><td>Respuesta táctil al tocar los botones</td></tr>
+<tr><td>Almacenamiento (solo Android 9 o anterior)</td><td>Guardar capturas de pantalla en la galería</td></tr>
+<tr><td>Identificador de publicidad</td><td>Anuncios del plan gratuito</td></tr>
+<tr><td>Facturación de Google Play</td><td>Suscripciones y compra de Maestro Pro</td></tr>
+</table></div>
+<p>Maestro no solicita acceso a tu ubicación, contactos, cámara, archivos personales ni, directamente, al micrófono.</p>
+<p>Las nuevas funciones pueden requerir permisos adicionales, como acceso a fotos, vídeos y música para enviarlos a un dispositivo, o Bluetooth para controlar equipos cercanos. Estos permisos se solicitarán solo cuando uses la función correspondiente, podrán denegarse sin afectar a las demás funciones y se describirán en esta política antes de empezar a usarse.</p>
+<h2 id="s11">11. Derechos del titular</h2>
+<p>Conforme al art. 18 de la LGPD, puedes solicitar, en cualquier momento y de forma gratuita:</p>
+<ul>
+<li>confirmación de la existencia del tratamiento y acceso a los datos;</li>
+<li>rectificación de datos incompletos, inexactos o desactualizados;</li>
+<li>anonimización, bloqueo o eliminación de datos innecesarios o tratados de forma indebida;</li>
+<li>portabilidad de los datos;</li>
+<li>información sobre las entidades con las que se comparten los datos;</li>
+<li>información sobre la posibilidad de no dar el consentimiento y sus consecuencias;</li>
+<li>revocación del consentimiento y eliminación de los datos tratados con base en él.</li>
+</ul>
+<p>Como los datos de Maestro se quedan en tu dispositivo, la mayoría de estos derechos puede ejercerse directamente en la aplicación o en los ajustes de Android. Para los datos tratados por Google, utiliza las herramientas de tu <a href='https://myaccount.google.com/'>Cuenta de Google</a>. Los usuarios sujetos al RGPD tienen además los derechos de oposición y de limitación del tratamiento. También puedes presentar una reclamación ante la <a href='https://www.gov.br/anpd/'>ANPD</a> o ante la autoridad de protección de datos de tu país.</p>
+<p>Las solicitudes pueden enviarse al correo indicado en la sección 14 y se responderán en un plazo de 15 días.</p>
+<h2 id="s12">12. Menores</h2>
+<p>Maestro no está dirigido a menores de 13 años y no recoge intencionadamente datos personales de niños. Si sabes que se han tratado datos de un menor sin el consentimiento de su tutor, ponte en contacto con nosotros para eliminarlos.</p>
+<h2 id="s13">13. Cambios en esta política</h2>
+<p>Esta política puede actualizarse para reflejar cambios en la aplicación o en la legislación. La versión vigente estará siempre disponible en esta dirección, con la fecha de la última actualización en la parte superior. Los cambios relevantes se comunicarán en la propia aplicación.</p>
+<h2 id="s14">14. Legislación aplicable y contacto</h2>
+<p>Esta política se rige por las leyes de la República Federativa de Brasil, sin perjuicio de los derechos que otorga a los titulares la legislación de su país de residencia.</p>
+<p class='contact'><strong>JellasStudio</strong> — canal de atención al titular<br>
+Correo electrónico: <a href='mailto:jellas20.dev@gmail.com'>jellas20.dev@gmail.com</a></p>
+</article>
+</main>
+<footer>© 2026 JellasStudio · Maestro. Todos los derechos reservados.</footer>
+</body>
+</html>

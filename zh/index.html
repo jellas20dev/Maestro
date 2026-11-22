@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh-CN" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 — Maestro</title>
+<meta name="description" content="Maestro 应用（适用于电视及其他联网设备的万能遥控器）的隐私政策，符合 LGPD 与 GDPR。">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="alternate" hreflang="pt-BR" href="../pt/"><link rel="alternate" hreflang="en" href="../en/"><link rel="alternate" hreflang="es" href="../es/"><link rel="alternate" hreflang="fr" href="../fr/"><link rel="alternate" hreflang="de" href="../de/"><link rel="alternate" hreflang="it" href="../it/"><link rel="alternate" hreflang="ja" href="../ja/"><link rel="alternate" hreflang="ru" href="../ru/"><link rel="alternate" hreflang="zh-CN" href="../zh/"><link rel="alternate" hreflang="ar" href="../ar/">
+<style>
+:root {
+    --bg:#f7f7fa; --paper:#ffffff; --fg:#1a1a1f; --muted:#5d5d68; --line:#e4e4ec;
+    --accent:#3d5afe; --accent-soft:#eef1ff; --head:#0d0d12; --head-fg:#f4f4f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#0e0e12; --paper:#16161c; --fg:#ececf2; --muted:#a2a2ae; --line:#2a2a34;
+      --accent:#8c9eff; --accent-soft:#1d2140; --head:#050507; --head-fg:#f4f4f8;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color:var(--accent); }
+  header { background:var(--head); color:var(--head-fg); }
+  .head { max-width:880px; margin:0 auto; padding:40px 16px 36px; display:flex; gap:20px; align-items:center; }
+  .head img { width:72px; height:72px; border-radius:18px; flex:none; }
+  .head h1 { margin:0; font-size:1.85rem; line-height:1.2; letter-spacing:-.01em; }
+  .head p { margin:6px 0 0; color:#b9b9c6; font-size:.95rem; }
+  main { max-width:880px; margin:0 auto; padding:0 16px 64px; }
+  .paper { background:var(--paper); border:1px solid var(--line); border-radius:16px;
+           padding:32px clamp(18px, 4vw, 44px); margin-top:-12px; position:relative; }
+  .meta { display:flex; flex-wrap:wrap; gap:8px 24px; color:var(--muted); font-size:.9rem;
+          padding-bottom:20px; border-bottom:1px solid var(--line); }
+  .meta b { color:var(--fg); font-weight:600; }
+  .summary { background:var(--accent-soft); border-radius:12px; padding:20px 22px; margin:24px 0; }
+  .summary h2 { margin:0 0 10px; font-size:1.05rem; border:0; padding:0; }
+  .summary ul { margin:0; padding-left:20px; }
+  .summary li { margin:4px 0; }
+  nav.toc { border:1px solid var(--line); border-radius:12px; padding:16px 22px; margin:24px 0 8px; }
+  nav.toc strong { display:block; margin-bottom:6px; font-size:.95rem; }
+  nav.toc ol { margin:0; padding-left:22px; columns:2; column-gap:32px; font-size:.95rem; }
+  nav.toc li { break-inside:avoid; margin:2px 0; }
+  nav.toc a { text-decoration:none; }
+  nav.toc a:hover { text-decoration:underline; }
+  h2 { font-size:1.22rem; margin:40px 0 10px; padding-top:8px; scroll-margin-top:16px; }
+  h3 { font-size:1rem; margin:22px 0 6px; }
+  p, li { color:var(--fg); }
+  .wrap { overflow-x:auto; margin:14px 0; border:1px solid var(--line); border-radius:10px; }
+  table { width:100%; border-collapse:collapse; font-size:.93rem; }
+  th, td { text-align:left; vertical-align:top; padding:10px 12px; border-bottom:1px solid var(--line); }
+  tr:last-child td { border-bottom:0; }
+  th { background:var(--accent-soft); font-weight:600; white-space:nowrap; }
+  .contact { border-left:3px solid var(--accent); padding:4px 0 4px 16px; }
+  footer { max-width:880px; margin:0 auto; padding:0 16px 40px; color:var(--muted); font-size:.85rem; text-align:center; }
+  @media (max-width:600px) {
+    .head { flex-direction:column; align-items:flex-start; padding-top:28px; }
+    .head img { width:56px; height:56px; border-radius:14px; }
+    .head h1 { font-size:1.5rem; }
+    nav.toc ol { columns:1; }
+  }
+  @media print {
+    header { background:none; color:#000; } .head p { color:#444; }
+    .paper { border:0; margin:0; padding:0; } nav.toc { display:none; }
+  }
+
+.lang { margin-inline-start:auto; align-self:flex-start; }
+.lang select { background:#1d1d25; color:#f4f4f8; border:1px solid #3a3a46; border-radius:8px; padding:6px 10px; font:inherit; font-size:.9rem; }
+[dir="rtl"] th, [dir="rtl"] td { text-align:right; }
+[dir="rtl"] ul, [dir="rtl"] ol { padding-left:0; padding-right:22px; }
+.sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
+[dir="rtl"] .contact { border-left:0; border-right:3px solid var(--accent); padding:4px 16px 4px 0; }
+@media (max-width:600px) { .lang { margin-inline-start:0; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="head">
+    <img src="../icon.png" alt="Maestro 图标">
+    <div>
+      <h1>隐私政策</h1>
+      <p>Maestro — 万能遥控器 · JellasStudio</p>
+    </div>
+    <label class="lang"><span class="sr">语言</span>
+      <select aria-label="语言" onchange="try{localStorage.setItem('lang',this.value.split('/')[1])}catch(e){};location.href=this.value"><option value="../pt/" lang="pt-BR">Português</option><option value="../en/" lang="en">English</option><option value="../es/" lang="es">Español</option><option value="../fr/" lang="fr">Français</option><option value="../de/" lang="de">Deutsch</option><option value="../it/" lang="it">Italiano</option><option value="../ja/" lang="ja">日本語</option><option value="../ru/" lang="ru">Русский</option><option value="../zh/" selected lang="zh-CN">简体中文</option><option value="../ar/" lang="ar">العربية</option></select>
+    </label>
+  </div>
+</header>
+<main>
+<article class="paper">
+  <div class="meta">
+    <span>生效日期: <b>2026年11月21日</b></span>
+    <span>最后更新: <b>2026年11月21日</b></span>
+    <span>版本: <b>1.0</b></span>
+  </div>
+  <section class="summary">
+    <h2>摘要</h2>
+    <ul><li>Maestro 无需注册，也没有自己的服务器：不会向 JellasStudio 发送任何个人数据。</li><li>您的设备（电视、流媒体设备及其他兼容设备）由您的手机直接控制，通常在您的本地网络内进行。</li><li>语音指令的音频由 Android 的语音识别服务处理，而非 Maestro。</li><li>在免费版中，Google AdMob 可能会为展示广告而处理数据。Pro 订阅用户不会看到广告。</li><li>所有付款均由 Google Play 独家处理。</li></ul>
+  </section>
+  <nav class="toc">
+    <strong>目录</strong>
+    <ol><li><a href="#s1">数据控制者与适用范围</a></li><li><a href="#s2">定义</a></li><li><a href="#s3">处理的数据及目的</a></li><li><a href="#s4">语音指令</a></li><li><a href="#s5">广告</a></li><li><a href="#s6">购买与订阅</a></li><li><a href="#s7">法律依据</a></li><li><a href="#s8">数据共享与跨境传输</a></li><li><a href="#s9">存储、保留与安全</a></li><li><a href="#s10">应用权限</a></li><li><a href="#s11">数据主体的权利</a></li><li><a href="#s12">儿童</a></li><li><a href="#s13">本政策的变更</a></li><li><a href="#s14">适用法律与联系方式</a></li></ol>
+  </nav>
+<h2 id="s1">1. 数据控制者与适用范围</h2>
+<p>本隐私政策说明 Android 应用 <strong>Maestro</strong>（应用标识 <code>com.jellas.maestroremote</code>）如何处理用户信息。本应用由 <strong>JellasStudio</strong>（以下简称“JellasStudio”或“我们”）开发和发布，JellasStudio 依据巴西第 13.709/2018 号法律（《个人数据保护通用法》，LGPD）以及在适用情况下依据欧盟第 2016/679 号条例（GDPR）担任数据控制者。</p>
+<p>使用 Maestro 即表示您已阅读并理解本政策。本政策仅适用于本应用；本文提及的第三方服务有其各自的政策。</p>
+<h2 id="s2">2. 定义</h2>
+<ul>
+<li><strong>个人数据：</strong>与已识别或可识别的自然人有关的信息。</li>
+<li><strong>数据主体：</strong>个人数据所涉及的人，即您本人。</li>
+<li><strong>处理：</strong>对数据进行的任何操作，例如收集、使用、存储、共享和删除。</li>
+<li><strong>兼容设备：</strong>Maestro 能够控制的任何设备，例如电视、流媒体设备、接收器、音箱、空调及其他联网设备。</li>
+<li><strong>本地网络：</strong>您的手机和设备所连接的 Wi-Fi 网络。</li>
+<li><strong>免费版 / Maestro Pro：</strong>不订阅或购买与订阅或一次性永久购买两种使用方式。</li>
+</ul>
+<h2 id="s3">3. 处理的数据及目的</h2>
+<p>Maestro 依据数据最小化原则（LGPD 第 6 条第 III 项）设计。以下数据<strong>仅保存在您设备的内部存储中</strong>，不会传输给 JellasStudio。</p>
+<div class='wrap'><table>
+<tr><th>数据</th><th>目的</th><th>存储位置</th></tr>
+<tr><td>所发现设备的名称、品牌、型号、本地 IP 地址和 MAC 地址</td><td>识别、连接并远程开启（Wake-on-LAN）您的设备</td><td>手机本地；仅发送给本地网络中的设备本身</td></tr>
+<tr><td>设备状态（开关机、音量、输入源、温度、运行模式）</td><td>显示并调整设备的运行</td><td>从设备本身获取；不会永久保存</td></tr>
+<tr><td>设备之间的关联（例如 HDMI 输入）</td><td>在相互连接的设备之间自动切换</td><td>手机本地</td></tr>
+<tr><td>授权码和配对用加密密钥</td><td>避免设备每次使用时都要求授权</td><td>应用私有存储区</td></tr>
+<tr><td>设备上已安装应用的列表和图标（如可获取）</td><td>从手机显示并打开这些应用</td><td>手机本地（缓存）</td></tr>
+<tr><td>设备屏幕截图</td><td>仅在您请求时保存或分享</td><td>相册（Pictures/Maestro）或您选择的应用</td></tr>
+<tr><td>偏好设置（主题、语言、振动、按键音）及订阅状态</td><td>保留您的设置并在离线时启用 Pro 功能</td><td>手机本地</td></tr>
+</table></div>
+<p>设备发现使用 mDNS、SSDP 等标准本地网络协议，并仅限于您手机所连接的网络。所显示的应用图标归各自权利人所有，仅用于识别。</p>
+<h3>通过制造商云服务控制的设备</h3>
+<p>部分设备只接受通过制造商自有云服务发送的指令。如果您选择将该服务的账户连接到 Maestro，授权将在制造商的官方页面上完成，Maestro 永远无法获取您的密码。本应用仅在您的手机上保存所授予的访问凭证，并将指令直接发送至制造商的服务器，制造商对数据的处理适用其自身的隐私政策。您可以随时在应用内或制造商网站上断开该账户。</p>
+<h2 id="s4">4. 语音指令</h2>
+<p>Maestro <strong>不会录制、存储或传输音频</strong>。当您点按麦克风按钮时，本应用会调用 Android 系统的语音识别服务（通常由 Google 提供）。该服务采集音频，并只将识别出的文字（例如“打开 YouTube”）返回给 Maestro，该文字会立即用于执行指令，随后被丢弃。</p>
+<p>语音服务提供方对音频的处理适用 <a href='https://policies.google.com/privacy'>Google 隐私权政策</a>。未经您的操作，麦克风绝不会被启用。</p>
+<h2 id="s5">5. 广告</h2>
+<p>免费版会展示由 <strong>Google AdMob</strong> 提供的广告：在设备列表和设置页面展示横幅广告，并在您离开数小时后返回应用时偶尔展示一则广告。遥控器界面绝不会展示广告。对于 Maestro Pro 订阅用户，广告服务不会启动。</p>
+<p>为展示广告、限制展示频率并衡量效果，AdMob 可能会收集 Android 广告 ID、IP 地址、设备和系统的技术信息以及与广告的互动。这些数据由 Google 作为独立控制者处理，详见 <a href='https://policies.google.com/technologies/partner-sites'>Google 如何使用来自使用其服务的网站或应用的信息</a>。</p>
+<p>在法律要求事先同意的地区（例如欧洲经济区、英国和瑞士），本应用会在加载广告前通过 Google 官方同意平台征求您的许可，并允许您随时在 <em>设置 &gt; 关于 &gt; 广告隐私选项</em> 中修改。在任何国家/地区，您都可以在 Android 设置（<em>Google &gt; 广告</em>）中重置或删除广告 ID。</p>
+<h2 id="s6">6. 购买与订阅</h2>
+<p>Maestro Pro 的订阅和永久购买完全由 <strong>Google Play</strong> 处理。JellasStudio 不会接收或存储您的姓名、电子邮件、地址、银行卡信息或任何其他付款信息。</p>
+<p>本应用仅从 Google Play 接收存在有效购买的确认及交易代码，用于启用 Pro 功能。取消、退款及订阅管理均在 Play 商店的 <em>付款和订阅</em> 中进行，并适用 <a href='https://play.google.com/about/play-terms/'>Google Play 服务条款</a>。</p>
+<h2 id="s7">7. 法律依据</h2>
+<div class='wrap'><table>
+<tr><th>处理活动</th><th>法律依据（LGPD 第 7 条）</th></tr>
+<tr><td>遥控功能、配对和偏好设置</td><td>应数据主体要求履行合同或与合同相关的程序（第 V 项）</td></tr>
+<tr><td>语音指令和屏幕截图</td><td>基于数据主体明确操作的合同履行（第 V 项）</td></tr>
+<tr><td>处理购买和验证订阅</td><td>合同履行（第 V 项）</td></tr>
+<tr><td>在法律要求同意的地区展示个性化广告</td><td>同意（第 I 项），可随时撤回</td></tr>
+<tr><td>其他情况下的广告与效果衡量</td><td>正当利益（第 IX 项），使本应用得以免费提供</td></tr>
+</table></div>
+<p>对于适用 GDPR 的用户，适用其第 6 条第 1 款 (a)、(b) 和 (f) 项的相应依据。</p>
+<h2 id="s8">8. 数据共享与跨境传输</h2>
+<p>JellasStudio <strong>不会出售、出租或共享</strong>个人数据。可能接收数据的第三方仅限于第 4 至 6 节所述的 Google 服务、您在本地网络中的设备，以及仅在您连接账户时相应制造商的云服务（第 3 节）。</p>
+<p>Google 可能在巴西境外的服务器上处理数据。此类传输由 Google 自行实施，并以 LGPD 第 33 条规定的保障措施（例如标准合同条款）为依据。</p>
+<h2 id="s9">9. 存储、保留与安全</h2>
+<p>第 3 节所述数据在本应用安装期间保存在您的设备上。您可随时通过从列表中移除设备、在 Android 设置中清除应用数据或卸载 Maestro 来删除这些数据。由 Google 处理的数据适用其政策规定的保留期限。</p>
+<p>配对密钥保存在应用私有存储区，其他应用无法访问。只要制造商支持（例如三星、LG 和 Android TV 电视），与设备的通信均采用加密（TLS），与云服务的通信始终加密。任何系统都无法完全避免故障；如发生重大安全事件，我们将依据 LGPD 第 48 条通知数据主体及巴西国家数据保护局（ANPD）。</p>
+<h2 id="s10">10. 应用权限</h2>
+<div class='wrap'><table>
+<tr><th>权限</th><th>用途</th></tr>
+<tr><td>互联网；网络和 Wi-Fi 状态</td><td>与本地网络中的设备以及广告和购买服务通信</td></tr>
+<tr><td>Wi-Fi 多播</td><td>自动发现网络中的设备</td></tr>
+<tr><td>红外线</td><td>在配备红外发射器的手机上通过红外线控制设备</td></tr>
+<tr><td>振动</td><td>点按按钮时的触感反馈</td></tr>
+<tr><td>存储（仅限 Android 9 及更早版本）</td><td>将屏幕截图保存到相册</td></tr>
+<tr><td>广告 ID</td><td>免费版广告</td></tr>
+<tr><td>Google Play 结算</td><td>Maestro Pro 的订阅与购买</td></tr>
+</table></div>
+<p>Maestro 不会请求访问您的位置、通讯录、相机、个人文件，也不会直接访问麦克风。</p>
+<p>新功能可能需要额外权限，例如访问照片、视频和音乐以将其发送到设备，或使用蓝牙控制附近的设备。这些权限仅在您使用相应功能时才会请求，拒绝不会影响其他功能，并会在启用前写入本政策。</p>
+<h2 id="s11">11. 数据主体的权利</h2>
+<p>根据 LGPD 第 18 条，您可以随时免费要求：</p>
+<ul>
+<li>确认是否存在处理活动并访问数据；</li>
+<li>更正不完整、不准确或过时的数据；</li>
+<li>对不必要或不当处理的数据进行匿名化、封存或删除；</li>
+<li>数据可携带；</li>
+<li>获知与之共享数据的实体信息；</li>
+<li>获知可以不予同意及其后果的信息；</li>
+<li>撤回同意并删除基于同意处理的数据。</li>
+</ul>
+<p>由于 Maestro 的数据保存在您的设备上，上述大部分权利可以直接在应用内或 Android 设置中行使。对于由 Google 处理的数据，请使用您 <a href='https://myaccount.google.com/'>Google 账号</a> 中的工具。适用 GDPR 的用户还享有反对处理和限制处理的权利。您也可以向 <a href='https://www.gov.br/anpd/'>ANPD</a> 或您所在国家/地区的数据保护机构投诉。</p>
+<p>请求可发送至第 14 节所列电子邮箱，我们将在 15 天内答复。</p>
+<h2 id="s12">12. 儿童</h2>
+<p>Maestro 不面向 13 岁以下儿童，也不会有意收集儿童的个人数据。如您得知儿童的数据在未经监护人同意的情况下被处理，请联系我们予以删除。</p>
+<h2 id="s13">13. 本政策的变更</h2>
+<p>本政策可能会根据应用或法律的变化进行更新。现行版本将始终发布在本页面，并在顶部注明最后更新日期。重大变更将在应用内告知。</p>
+<h2 id="s14">14. 适用法律与联系方式</h2>
+<p>本政策受巴西联邦共和国法律管辖，但不影响数据主体依据其居住国法律享有的权利。</p>
+<p class='contact'><strong>JellasStudio</strong> — 数据主体联络渠道<br>
+电子邮箱：<a href='mailto:jellas20.dev@gmail.com'>jellas20.dev@gmail.com</a></p>
+</article>
+</main>
+<footer>© 2026 JellasStudio · Maestro. 保留所有权利。</footer>
+</body>
+</html>
